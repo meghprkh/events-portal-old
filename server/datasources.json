@@ -2,5 +2,14 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "mysqlDs": {
+    "host": "localhost",
+    "port": 3306,
+    "database": "itproj",
+    "password": "password",
+    "name": "mysqlDs",
+    "user": "itproj_user",
+    "connector": "mysql"
   }
 }
