@@ -31,5 +31,13 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "Student": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "Group": {
+    "dataSource": "mysqlDs",
+    "public": true
   }
 }
