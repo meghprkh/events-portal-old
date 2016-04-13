@@ -39,5 +39,9 @@
   "Group": {
     "dataSource": "mysqlDs",
     "public": true
+  },
+  "Event": {
+    "dataSource": "mysqlDs",
+    "public": true
   }
 }

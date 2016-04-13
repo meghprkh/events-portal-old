@@ -1,6 +1,6 @@
 {
-  "name": "Group",
-  "base": "User",
+  "name": "Event",
+  "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
@@ -12,18 +12,21 @@
     },
     "description": {
       "type": "string"
+    },
+    "date": {
+      "type": "date"
     }
   },
   "validations": [],
   "relations": {
+    "groups": {
+      "type": "hasOne",
+      "model": "Group",
+      "foreignKey": ""
+    },
     "students": {
       "type": "hasAndBelongsToMany",
       "model": "Student",
-      "foreignKey": ""
-    },
-    "events": {
-      "type": "hasMany",
-      "model": "Event",
       "foreignKey": ""
     }
   },
